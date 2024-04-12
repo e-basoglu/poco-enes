@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- this is an example from the MDN Layout Cookbook -->
+    <title>CSS Cookbook: sticky footer</title>
+
+
+    <style>
+      html {
+        height: 100%;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100%;
+        background-color: #fff;
+        color: #333;
+        font:
+          1.2em / 1.5 Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: inherit;
+      }
+
+      section {
+        height: 100%;
+      }
+
+      .wrapper {
+        min-height: 100%;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+      }
+
+      .page-header,
+      .page-footer {
+        background-color: rgb(75, 70, 74);
+        color: #fff;
+        padding: 20px;
+      }
+
+      .page-body {
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div class="wrapper">
+        <header class="page-header">This is the header</header>
+        <main class="page-body">
+          <p>
+            Main page content here, add more if you want to see the footer push
+            down.
+           
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est tenetur eligendi exercitationem tempore, libero, beatae alias sed nemo illum totam earum et vel voluptas laboriosam modi cumque soluta omnis minima. Doloremque facilis, molestias repudiandae alias hic distinctio. Explicabo, eveniet dolores asperiores eos consequatur corporis necessitatibus quaerat accusantium dignissimos voluptas optio?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est tenetur eligendi exercitationem tempore, libero, beatae alias sed nemo illum totam earum et vel voluptas laboriosam modi cumque soluta omnis minima. Doloremque facilis, molestias repudiandae alias hic distinctio. Explicabo, eveniet dolores asperiores eos consequatur corporis necessitatibus quaerat accusantium dignissimos voluptas optio?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est tenetur eligendi exercitationem tempore, libero, beatae alias sed nemo illum totam earum et vel voluptas laboriosam modi cumque soluta omnis minima. Doloremque facilis, molestias repudiandae alias hic distinctio. Explicabo, eveniet dolores asperiores eos consequatur corporis necessitatibus quaerat accusantium dignissimos voluptas optio?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sequi aliquid nihil distinctio corporis, quidem placeat eius doloremque provident natus molestiae minus, expedita eos, sapiente pariatur incidunt soluta vel voluptatem? Aperiam sed ex reiciendis pariatur assumenda, illum perspiciatis natus cupiditate, ipsam obcaecati animi dolores. Fuga, recusandae tenetur optio ex ea molestias quas laboriosam dolor! Dignissimos, repellendus. Culpa maxime quo at laborum laudantium minima deserunt facere reprehenderit. Est laborum inventore natus nam mollitia ut consequuntur quis voluptatibus laboriosam obcaecati illo nobis eius nihil vero, exercitationem veniam. Vitae suscipit qui nam aliquam recusandae odio! Quaerat aliquam culpa molestias aspernatur distinctio sit aliquid.</p>
+          </p>
+        </main>
+        <footer class="page-footer">Sticky footer</footer>
+      </div>
+    </section>
+  </body>
+</html>
