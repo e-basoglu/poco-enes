@@ -1,0 +1,53 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+/*     scroll-behavior: smooth;
+ */}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+
+}
+
+main ul{
+    justify-content: flex-start;
+    gap: 0;
+    overflow-x: hidden;
+    transform: translateX(0);
+    transform: transform 0.5s ease-in-out;
+}
+
+main li{
+    background-color: aqua;
+    color: white;
+    display: grid;  
+    font-size: 3rem;
+    flex-shrink: 0;
+    place-items: center;
+    height: 50vh;
+    width: 100vw;
+    transition: transform 0.5s ease-in-out;
+}
+
+main li:first-of-type{
+    background-color: red;
+}
+main li:last-of-type{
+    background-color: blue;
+}
+
+/* main li:target{
+    transform: translateX(0);
+} */

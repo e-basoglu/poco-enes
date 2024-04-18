@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+  }
+  
+  .item {
+    width: 100px; /* Set width for demonstration */
+    height: 100px; /* Set height for demonstration */
+    border: 1px solid black; /* Just for visualization */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  
+  /* Define different order for different screen sizes */
+  @media screen and (max-width: 600px) {
+    .item1 { order: 2; }
+    .item2 { order: 1; }
+    .item3 { order: 5; }
+    .item4 { order: 4; }
+    .item5 { order: 3; }
+  }
+  
