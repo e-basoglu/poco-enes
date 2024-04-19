@@ -1,6 +1,6 @@
 Allow the user to input digits, afterwards sort and print them in numerical order.
 
-Selection Sort 
+Selection Sort (Pseudocode)
 
 1. Initialize an array to store the integers entered.
 2. Initialize the first entered integer as minimum.
