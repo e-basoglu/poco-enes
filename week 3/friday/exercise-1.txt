@@ -1,0 +1,17 @@
+Allow the user to input digits, afterwards sort and print them in numerical order.
+
+Selection Sort 
+
+1. Initialize an array to store the integers entered.
+2. Initialize the first entered integer as minimum.
+3. Ask the user to enter the integers
+4. Apply While loop to step 3 until the user stop entering an integer, and then move to the step 5.
+5. If the entered data is integer, save it to the array. If not, ask the user to enter an integer.
+6. Set the first integer as minimum.
+7. Compare the first integer with the second integer entered next to it. If the second integer is smaller than minimum (first integer), assign the second integer as minimum, if not, the first integer is still the minimum. 
+8. Next, compare minimum with the third integer. Again, if the third integer is smaller, then assign minimum to the third integer otherwise do nothing, existing minimum is still valid. Loop this process until the last integer. 
+9. Minimum integer is placed in the front of the unsorted list. The first integer exists in the beginning of the unsorted list goes to the minimum. This is the first iteration. 
+10. After the first iteration, continue the loop (step 7-9) until N-1 (N is the number of integers entered).
+11. Iterate this loop N-1 times to place rightly all integers entered in ascending order.
+12. Output the sorted list.
+
