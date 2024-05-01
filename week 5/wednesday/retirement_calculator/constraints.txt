@@ -1,0 +1,7 @@
+What are the constraints? Any edge case to consider? Note in your text file.
+
+1. Current age of the user should be a number not a string
+2. If the user enters something else, the user should get an alert message
+3. Age should be between the limitations (like between 18 and 60)
+4. Current/Retirement month can be another consideration
+

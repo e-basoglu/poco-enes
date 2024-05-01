@@ -1,0 +1,16 @@
+1. Prompt the user for their current age.
+2. Read the current age input from the user and store it in a variable (current_age).
+
+3. Prompt the user for the age they want to retire.
+4. Read the retirement age input from the user and store it in a variable (retirement_age).
+
+5. Calculate the number of years left until retirement:
+   years_left = retirement_age - current_age
+
+6. Calculate the year the user can retire:
+   current_year = current_year() // Function to get the current year
+   retirement_year = current_year + years_left
+
+7. Display the output:
+   Print "You have ___ years left until you can retire."
+   Print "It's ___ , so you can retire in ___."
