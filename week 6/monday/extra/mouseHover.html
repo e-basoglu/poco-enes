@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Hover Effect</title>
+    <style>
+        #myDiv {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv">Hover over me</div>
+
+    <script>
+        var div = document.getElementById("myDiv");
+
+        div.addEventListener("mouseover", function() {
+            div.style.backgroundColor = "blue";
+        });
+
+        div.addEventListener("mouseout", function() {
+            div.style.backgroundColor = "pink";
+        });
+    </script>
+</body>
+</html>

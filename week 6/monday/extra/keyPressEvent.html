@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Key Press Event</title>
+</head>
+<body>
+    <label for="myInput">Get what you want</label>
+    <input type="text" id="myInput">
+    <div id="output"></div>
+
+    <script>
+        document.getElementById("myInput").addEventListener("keyup", function(event) {
+            document.getElementById("output").textContent = event.key;
+        });
+    </script>
+</body>
+</html>
